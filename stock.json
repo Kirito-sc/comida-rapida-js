@@ -1,0 +1,7 @@
+[
+    { "id": 1, "nombre": "Hamburguesa simple", "precio": 220, "img": "./imagenes/image1.jpeg" },
+    { "id": 2, "nombre": "Hamburguesa Doble", "precio": 320, "img": " ./imagenes/image2.jpeg " },
+    { "id": 3, "nombre": "Hamburguesa completa", "precio": 350, "img": " ./imagenes/image3.jpeg " },
+    { "id": 4, "nombre": "Papas fritas", "precio": 150, "img": "./imagenes/image4.jpeg" },
+    { "id": 5, "nombre": "Papas chedar", "precio": 200, "img": "./imagenes/image5.jpeg" }
+]

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Sistemas de Comidas Rapidas</title>
+</head>
+
+<body>
+
+    <!--Nav-->
+    <nav class="navbar navbar-dark text-center">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="#"><strong>SISTEMA DE COMIDA RÁPIDA</strong></a>
+        </div>
+    </nav>
+
+    <!--Contenedor de las tarjetas con img-->
+    <div class="mt-5">
+        <div class="seleccion text-center mt-5" id="seleccion">
+        </div>
+
+        <div id="totales" class="seleccion">
+        </div>
+    </div>
+
+    <!--Contenedor de las tablas dinámicas-->
+    <div class="container">
+
+
+
+        <div id="resumen" class="ingreso-1">
+
+
+
+        </div>
+
+
+        <div id="pago" class=""></div>
+
+        <table class="table table-danger table-striped tablas" id="tabla">
+
+            <tbody>
+                <tr>
+                    <td id="total" class="total text-center">
+                        <h5>Total</h5>
+                </tr>
+                <tr>
+                    <td id="botonTotal" class="bloque text-center"></td>
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+        <!--Tabla que permite resetear los datos ya que al resetear la primera me 
+            tira error del evento escuchar-->
+        <table class="table table-danger table-striped tablas" id=tabla1></table>
+
+    </div>
+
+    <!-- modal -->
+    <button id="botonModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="display:none">
+    Apreta este Botón
+  </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog text-dark">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="cuerpoModal" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button id="cerrarModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="codigo.js"></script>
+</body>
+
+</html>
